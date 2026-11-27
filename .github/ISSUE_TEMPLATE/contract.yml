@@ -1,0 +1,12 @@
+name: Contract change
+description: Bundle schema, sim API, or model-version ID change
+labels: ["contract", "downstream"]
+body:
+  - type: textarea
+    id: change
+    attributes: { label: Proposed change, description: "Fields/endpoints, old vs new, breaking or additive." }
+    validations: { required: true }
+  - type: textarea
+    id: impact
+    attributes: { label: Impact on phoskintime-core / -sim / -vis, and migration }
+    validations: { required: true }

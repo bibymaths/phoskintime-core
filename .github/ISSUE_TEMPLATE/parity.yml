@@ -1,0 +1,12 @@
+name: Parity mismatch
+description: Numbers differ from the reference (golden tests, phoskintime, or another package)
+labels: ["parity"]
+body:
+  - type: textarea
+    id: case
+    attributes: { label: Case, description: "Inputs (synthetic only), function, both values, max abs/rel error, tolerance." }
+    validations: { required: true }
+  - type: input
+    id: versions
+    attributes: { label: Versions and commits of both sides }
+    validations: { required: true }

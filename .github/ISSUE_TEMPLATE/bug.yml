@@ -1,0 +1,16 @@
+name: Bug
+description: Something does not work as documented
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: "Include the command, versions and full error." }
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes: { label: What you expected }
+    validations: { required: true }
+  - type: input
+    id: versions
+    attributes: { label: "Versions (package, model-version ID, bundle_schema, Python, JAX)" }
+    validations: { required: true }
